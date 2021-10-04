@@ -22,12 +22,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Annotation 2021-10-04 090842](https://user-images.githubusercontent.com/19163868/135790120-f581a7f9-a6f7-4afb-ad7c-f023c51a3b33.png)
+
+![Annotation 2021-10-04 090918](https://user-images.githubusercontent.com/19163868/135790131-5dc95d8c-c18a-4c97-a5ca-dd432e15e3d3.png)
+
 
 ### Links
 
-- Solution URL: [Summary card](https://your-solution-url.com)
-- Live Site URL: [Summary card live](https://your-live-site-url.com)
+- Solution URL: [Summary card](https://github.com/sivakotari/order-summary-component-main)
+- Live Site URL: [Summary card live](https://sivakotari.github.io/order-summary-component-main)
 
 ## My process
 
