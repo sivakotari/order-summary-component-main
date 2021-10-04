@@ -1,0 +1,223 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --white: hsl(0, 0%, 100%) ;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+
+* {
+  transition: all 0.1s ease-in-out;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--desaturated-blue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 1.25rem;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.sr_only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.app {
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-color: var(--pale-blue);
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: auto;
+  height: 100vh;
+  text-align: center;
+  padding: 0 1.5625rem;
+}
+
+.app_container {
+  max-width: 28.125rem;
+  background-color: var(--white);
+  margin: 6.25rem auto 0 auto;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: rgba(114, 128, 167, 0.15) 0px 15px 25px, rgba(114, 128, 167, 0.05) 0px 5px 10px;
+}
+
+.app__bg {
+  width: 100%;
+  height: 13.75rem;
+  background-image: url("../images/illustration-hero.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.order__summary {
+  padding: 2.8125rem 1.5625rem;
+  text-align: center;
+}
+
+.order__title {
+  font-weight: 900;
+  font-size: 1.75rem;
+}
+
+.order__disc p {
+  margin-top: 0.875rem;
+  line-height: 1.625rem;
+}
+
+.order__plan {
+  padding: 1.5625rem;
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-gap: 0.75rem;
+  margin-top: 1.25rem;
+  background-color: var(--very-pale-blue);
+  border-radius: 0.9375rem;
+}
+.order__plan a {
+  justify-self: end;
+  font-size: 0.875rem;
+  font-weight: 900;
+  color: var(--bright-blue);
+}
+.order__plan a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.charges {
+  justify-self: start;
+}
+.charges h2 {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.order__action {
+  display: grid;
+}
+.order__action button {
+  margin-top: 2rem;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.order__action--proceed {
+  padding: 0.9375rem;
+  border-radius: 0.625rem;
+  background-color: var(--bright-blue);
+  color: var(--pale-blue);
+  box-shadow: rgba(56, 41, 224, 0.5) 0px 16px 50px -7px;
+}
+.order__action--proceed:hover {
+  opacity: 0.7;
+}
+
+.order__action--cancel {
+  color: var(--desaturated-blue);
+}
+.order__action--cancel:hover {
+  color: var(--dark-blue);
+}
+
+@media screen and (min-width: 451px) {
+  .app {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+
+  .order__summary {
+    padding: 2.8125rem 3rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

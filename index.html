@@ -4,35 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/index.css">
   
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="app">
+    <main class="app_container">
+      <header class="app__bg"></header>
+      <section class="order__summary">
+        <h2 class="order__title">Order Summary</h2>
 
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/sivakotari" target="_blank">sivakotari</a>.
+        <article class="order__disc">
+          <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+        </article>
+        
+        <article class="order__plan">
+          <h2 class="sr_only">Plan details</h2>
+          <img src="./images/icon-music.svg" width="45px" alt="music icon" srcset="">
+          <div class="charges">
+            <h2>Annual Plan</h2>
+            <p>$59.99/year</p>
+          </div>
+          <a href="#">Change</a>
+        </article>
+        
+        <article class="order__action">
+          <h2 class="sr_only">Payment actions</h2>
+          <button class="order__action--proceed">Proceed to Payment</button>
+          <button class="order__action--cancel">Cancel Order</button>
+        </article>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/sivakotari" target="_blank">sivakotari</a>.
+    </div>
   </div>
 </body>
 </html>

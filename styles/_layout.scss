@@ -1,0 +1,152 @@
+@import '_functions';
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: rem(16);
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+
+* {
+    transition: all 0.1s ease-in-out;
+}
+
+p {
+    font-size: rem(16);
+    color: var(--desaturated-blue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: rem(20);
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.sr_only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.app {
+    background-image: url('../images/pattern-background-mobile.svg');
+    background-color: var(--pale-blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: auto;
+    height: 100vh;
+    text-align: center;
+    padding: 0 rem(25);
+}
+
+.app_container {
+    max-width: rem(450);
+    background-color: var(--white);
+    margin: rem(100) auto 0 auto;
+    border-radius: rem(20);
+    overflow: hidden;
+    box-shadow: hsl(224 23% 55% / 15%) 0px 15px 25px, hsl(224 23% 55% / 5%) 0px 5px 10px;
+}
+
+.app__bg {
+    width: 100%;
+    height: rem(220);
+    background-image: url('../images/illustration-hero.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.order__summary {
+    padding: rem(45) rem(25);
+    text-align: center;
+}
+
+.order__title {
+    font-weight: 900;
+    font-size: rem(28);
+}
+
+.order__disc p {
+    margin-top: rem(14);
+    line-height: rem(26);
+}
+
+.order__plan {
+    padding: rem(25);
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: rem(12);
+    margin-top: rem(20);
+    background-color: var(--very-pale-blue);
+    border-radius: rem(15);
+    a {
+        justify-self: end;
+        font-size: rem(14);
+        font-weight: 900;
+        color: var(--bright-blue);
+        &:hover {
+            text-decoration: none;
+            opacity: 0.7;
+        }
+    }
+}
+
+.charges {
+    justify-self: start;
+    h2 {
+        font-size: rem(16);
+        font-weight: 900;
+    }
+}
+
+.order__action {
+    display: grid;
+    button {
+        margin-top: rem(32);
+        
+    }
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: rem(15);
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.order__action--proceed {
+    padding: rem(15);
+    border-radius: rem(10);
+    background-color: var(--bright-blue);
+    color: var(--pale-blue);
+    box-shadow: hsl(245 75% 52% / 50%) 0px 16px 50px -7px;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.order__action--cancel {
+    color: var(--desaturated-blue);
+    &:hover {
+        color: var(--dark-blue);
+    }
+}
+
+// desktop styles
+@media screen and (min-width: 451px) {
+    .app {
+        background-image: url('../images/pattern-background-desktop.svg');
+    }
+    .order__summary {
+        padding: rem(45) rem(48);
+    }
+}
