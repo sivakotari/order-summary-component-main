@@ -109,7 +109,7 @@ p {
   background-repeat: no-repeat;
   background-size: contain;
   overflow: auto;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   padding: 0 1.5625rem;
 }
@@ -149,7 +149,7 @@ p {
 .order__plan {
   padding: 1.5625rem;
   display: grid;
-  grid-template-columns: 2fr 5fr 2fr;
+  grid-template-columns: 45px 6fr 2fr;
   grid-auto-flow: column;
   align-items: center;
   grid-gap: 0.75rem;
@@ -197,7 +197,7 @@ button {
   border-radius: 0.625rem;
   background-color: var(--bright-blue);
   color: var(--pale-blue);
-  box-shadow: rgba(56, 41, 224, 0.5) 0px 16px 50px -7px;
+  box-shadow: rgba(56, 41, 224, 0.4) 0px 16px 50px -7px;
 }
 .order__action--proceed:hover {
   opacity: 0.7;
@@ -217,6 +217,20 @@ button {
 
   .order__summary {
     padding: 2.8125rem 3rem;
+  }
+}
+@media screen and (max-width: 359px) {
+  .order__plan {
+    grid-template-columns: 45px 1fr;
+  }
+  .order__plan a {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    justify-self: center;
+  }
+
+  .charges {
+    justify-self: center;
   }
 }
 
